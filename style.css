@@ -1,0 +1,315 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background image and basic styling for the body */
+body {
+    background: url(pic/bg.jpg);
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Styling for the navigation bar */
+nav {
+    width: 100%; 
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-evenly; 
+    background-color: whitesmoke;
+}
+
+/* Remove default list styling and set basic styling for list items */
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+    margin-top: -4%;
+    background-color: whitesmoke;
+}
+
+/* Styling for links in the navbar */
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-top: -3%;
+    transition: .4s ease;
+}
+
+ul li a.active {
+    color: red;
+}
+
+/* Hover effect for navbar links */
+ul li a:hover {
+    color: red;
+}
+
+/* Basic styling for the content container */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Padding for information section */
+.info {
+    padding: 20px;
+}
+
+/* Styling for h1 element in the information section */
+.info h1 {
+    font-size: 38px;
+    color: grey;
+}
+
+/* Styling for h2 element in the information section */
+.info h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+/* Styling for span element inside h2 */
+.info h2 span {
+    color: #000;
+}
+
+/* Styling for main container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center align h1 and add bottom margin */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Grid layout for the gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Styling for individual photo items in the gallery */
+.photo {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure images fill the photo containers */
+.photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust container and gallery width for smaller screens */
+    .container,
+    .gallery {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+}
+
+/* Flexbox layout for the about section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom: 40px;
+}
+
+/* Styling for the detail section */
+.detail {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Flexbox layout for detail-info */
+.detail .detail-info {
+    flex: 1;
+}
+
+/* Center align image inside detail section */
+.detail .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for h4 inside detail section */
+.detail h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Styling for paragraphs inside detail section */
+.detail p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Styling for unordered lists inside detail section */
+.detail ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Styling for list items inside detail section */
+.detail ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: white;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    /* Stack elements vertically in detail section for smaller screens */
+    .detail {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Adjust order of image in detail section for smaller screens */
+    .detail .image {
+        order: -1;
+        margin-top: 20px;
+    }
+}
+
+/* Styling for container-box */
+.container-box {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for con class inside container-box */
+.con {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Grid layout for contact-info */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Styling for individual sections inside contact-info */
+.contact-info-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for h3 inside contact-info-section */
+.contact-info-section h3 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Styling for paragraphs inside contact-info-section */
+.contact-info-section p {
+    margin: 0;
+    color: #777;
+}
+
+/* Styling for contact form */
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for form groups inside contact form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Styling for labels inside form groups */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styling for text, email, tel inputs, and textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for button inside contact form */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust container-box, contact-info, and contact-form width for smaller screens */
+    .container-box,
+    .contact-info,
+    .contact-form {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    /* Adjust padding for contact-info-section for smaller screens */
+    .contact-info-section {
+        padding: 15px;
+    }
+}

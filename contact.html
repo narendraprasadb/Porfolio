@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Details">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT ME</a></li>
+                <li><a href="./contact.html" class="active">CONTACT</a></li>
+                <li><a href="./gallery.html">MY GALLERY</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main">
+            <form class="contact-form" action="./contact.html">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required minlength="2" maxlength="48">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason to Contact</label>
+                    <textarea id="reason" name="reason" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <section class="container-box">
+                <h1 class="con">Contact Details</h1>
+                <div class="contact-info">
+                    <article class="contact-info-section">
+                        <h3>Email</h3>
+                        <p>narendraprasad1905@gmail.com</p>
+                    </article>
+                    <article class="contact-info-section">
+                        <h3>Phone</h3>
+                        <p>+916281233902</p>
+                    </article>
+                    <article class="contact-info-section">
+                        <h3>Address</h3>
+                        <p>Ganjipet, Gadwal, Telangana, India</p>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+</body>
+</html>
