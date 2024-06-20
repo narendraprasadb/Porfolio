@@ -1,13 +1,14 @@
 import React from 'react';
+
 interface IconComponentProps {
   src: string;
   alt: string;
-  width?: string;
-  height?: string;
+  id?: string;
+  className?: string;
 }
 
-const IconComponent: React.FC<IconComponentProps> = ({ src, alt, width , height }) => (
-  <img src={src} alt={alt} width={width} height={height}/>
+const IconComponent: React.FC<IconComponentProps> = ({ src, alt, id, className }) => (
+  <img src={src} alt={alt} id={id} className={className} />
 );
 
 export default IconComponent;

@@ -1,14 +1,13 @@
 .user-label-container {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    text-align: left;
-  }
-  
-  .user-label-title {
-    margin-bottom: 8px;
-  }
-  
-  .user-label-subtitle {
-    margin-bottom: 4px;
-  }
-  
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.user-label-title {
+  margin-bottom: 8px;
+}
+
+.user-label-subtitle {
+  margin-bottom: 4px;
+}
