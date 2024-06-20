@@ -1,0 +1,31 @@
+.icon-label-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 285px;
+}
+
+.icon-label-text {
+  text-align: left;
+  margin-bottom: 8px;
+  min-width: 200px;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  gap: 16px;
+  width: 100%;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#bike-icon, #car-icon, #bus-icon, #train-icon {
+  width: 20px;
+  height: 20px;
+}
