@@ -1,0 +1,16 @@
+
+.icon-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icon {
+    width: 63px;
+    height: 63px;
+  }
+  
+  .icon-small {
+    width: 24px;
+    height: 24px;
+  }
+  

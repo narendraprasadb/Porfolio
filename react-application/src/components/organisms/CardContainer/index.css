@@ -1,0 +1,18 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+  }
+  
+  .card {
+    height: 271px;
+    width: 320px;
+    border-radius: 60px;
+    gap: 0px;
+    justify-content:space-between;
+    padding: 16px 17.5px 16px 17.5px;
+  }
+  
+
