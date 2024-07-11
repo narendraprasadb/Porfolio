@@ -3,12 +3,13 @@ import Button from '../../atoms/Button'
 import TextField from '../../atoms/TextField'
 import { useState } from 'react'
 import { Box,styled, Typography } from '@mui/material'
+import { names } from '../../../utils/constants'
 
 const StyledBox = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    gap: '16px',
+    gap: theme.spacing(2),
     padding: '32px',
     border: `1px solid`,
 }));
@@ -18,12 +19,7 @@ const TypographyBox = styled(Box)(({ theme }) => ({
     flexDirection: 'column',
   }));
 
-const typographyValues = [
-    'Narendra',
-    'Manoj',
-    'Ramu',
-    'Naveen',
-  ];
+
   
 const PasswordValidation = () => {
     const [password, setPassword] = useState<string>('');
@@ -48,9 +44,9 @@ const handleSubmit = (): void => {
         <TextField value={password} placeholder='Enter the password' onChange={(e) => setPassword(e.target.value)} error={!!error}  />
         <Button variant='contained' onClick={handleSubmit}> Submit</Button>
         <TypographyBox>
-        {typographyValues.map((value, index) => (
-          <Typography key={index} variant='body1'>
-            {value}
+        {names.map((name, index) => (
+          <Typography key={index} variant="body1">
+            {name}
           </Typography>
         ))}
       </TypographyBox>
