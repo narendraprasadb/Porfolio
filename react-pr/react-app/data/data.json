@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "email": "narendra@gmail.com",
+      "password": "Narendra1905",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "email": "ajay@gmail.com",
+      "password": "Ajay123"
+    },
+    {
+      "email": "sunitha@gmail.com",
+      "password": "sunitha188",
+      "id": "fc88"
+    },
+    {
+      "id": "f7dc",
+      "email": "sunitha@gmail.com",
+      "password": "sunitha18"
+    },
+    {
+      "id": "3878",
+      "email": "narendr@gmail.com",
+      "password": "Narendra123"
+    },
+    {
+      "id": "6763",
+      "email": "abhinay@gmail.com",
+      "password": "Abhinay@123"
+    }
+  ]
+}
